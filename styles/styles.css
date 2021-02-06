@@ -152,7 +152,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2b2b2b;
+    background-color: #666562;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -164,7 +164,7 @@ html {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: #ab3e32;
+    background-color: #3ed46b9f;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -232,7 +232,7 @@ html {
   }
   
   h3 {
-    color: #ab3e32;
+    color: #e673ca;
   }
   
   @-webkit-keyframes boatAnimation {
