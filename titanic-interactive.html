@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="titanic-interactive.css">
+  </head>
+  <body>
+
+  <div class="main-wrapper">
+    <h1 style="text-align:center">Interactive Visualization For "Titanic" Dataset</h1>
+    <div id="main-data"></div>
+
+    <p>
+      Display:
+      <button id="button-gender">Gender</button>
+      <button id="button-survived">Survived</button>
+      <button id="button-embarked">Embarked</button>
+    </p>
+
+    <p>
+      Sort:
+      <button id="sort-gender">Gender</button>
+      <button id="sort-survived">Survived</button>
+      <button id="sort-embarked">Embarked</button>
+    </p>
+
+    <div>
+      <button onClick="window.location.reload()" style="background-color:#99ccff">Reset</button>
+    </div>
+
+    <div id="passenger-card">
+      <h2>Passenger Name: <span id="passenger-name"></span></h2>
+      <h3>Embarked: <span id="passenger-embarked"></span></h3>
+      <h3>Age: <span id="passenger-age"></span></h3>
+      <h3>Sex: <span id="passenger-sex"></span></h3>
+      <h3>Survived: <span id="passenger-survived"></span></h3>
+    </div>
+
+  </div>
+
+
+
+  <script src="index-2.js"></script>
+
+  </body>
+</html>

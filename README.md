@@ -14,7 +14,7 @@ The goal of this assignment is display the Titanic data. In the previous assignm
 - Style HTML element with JS based on data
 - Organized data to tell a story and/or reveal meaning
 - Use Array.sort() to sort data
-- Use Array.filter() to filter data
+- Use Arrsay.filter() to filter data
 
 ## Submission
 
