@@ -1,4 +1,5 @@
 html {
+    background-image: url(./assets/Titanic_sinking,_painting_by_Willy_Stöwer.jpg);
     background-color: #fcfcfc;
   }
   
@@ -215,12 +216,7 @@ html {
             justify-content: center;
   }
   
-  .titanic-image-div {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    -webkit-animation: boatAnimation 100s infinite;
-            animation: boatAnimation 100s infinite;
-  }
+
   
   .titanic-image {
     width: 35vw;
