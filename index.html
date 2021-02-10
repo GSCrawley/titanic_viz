@@ -15,23 +15,19 @@
 </head>
 
 <body>
-  <div class='titanic-dataset' id='titanic'>
-{% comment %} 
-    <!-- Title/ Hero -->
-    <div class="hero">
-      <h1> <span class="titanic">A Titanic Tragedy</span> <br> Data Visualizations</h1>
+  
+  <!-- Title/ Hero -->
+  <div class="hero">
+      <h1> <span class="titanic">A Tragedy of Titanic Proportions</span> </h1><br><h2> Data Visualizations</h2>
       <hr width="100px">
       <p class="heading"> Passenger Overview </p>
-    </div>
 
-
-    <div class='the-data'> {% endcomment %}
-
+  <div class='titanic-dataset' id='titanic'>
   <div class="chart">
-      <div id="titanic">
         <!-- generate all passenger divs -->
       </div>
-{% comment %}       
+      </div>
+
     <!-- Toggle Buttons -->
     <div class='toggle-buttons'>
       <!-- Gender Toggle-->
@@ -82,7 +78,7 @@
       </div>
     </div>
 
-
+</div>
      
 
     <!-- Summary Of Passenger Data -->
@@ -125,7 +121,7 @@
 
       <!-- Embarkment -->
       <h3>Embarkment</h3>
-      <p>Embarked from Queenstown: </p>
+      <p>Embarked from Queenstown: <span id='titanic-embarked'></span></p>
 
     </div>
 

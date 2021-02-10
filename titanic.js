@@ -1,5 +1,30 @@
 import data from './titanic-data.js'
 
+const portColor = { S: 'tomato', C: 'cornflowerblue', Q: 'violet', undefined: 'black'}
+const titanicEmbarked = document.querySelector('#titanic-embarked')
+
+const embarkedCounts = data.reduce((acc, p) => {
+  if (acc[p.fields.embarked] === undefined) {
+    acc[p.fields.embarked] = 1
+  } else {
+    acc[p.fields.embarked] += 1
+  }
+  return acc
+}, {})
+
+const embarkedKeys = Object.keys(embarkedCounts)
+ 
+embarkedKeys.forEach((e) => {
+  const el = document.createElement('div')
+  titanicEmbarked.appendChild(el)
+  el.style.width = '30px'
+  el.style.height = `${embarkedCounts[e]}px`
+  el.style.backgroundColor = portColor[e] 
+})
+
+titanicEmbarked.style.display = 'flex'
+
+
 // Get a reference to the #titanic
 const titanic = document.querySelector('#titanic')
 
@@ -18,13 +43,39 @@ passengers.forEach(p => {
   titanic.appendChild(p)
 })
 
+// data.sort((a, b) => {
+//   if (a.fields.sex === 'female') {
+//     return -1
+//   }
+//   return -1
+// })
+
+// data.sort((a,b)=> {
+//   if (a.fields.survived === 'Yes') {
+//     return -1
+//   }
+//   return 1
+//   // return < 1 a <- b
+//   // return 0   a - b
+//   // return > 1 b <- a
+// })
+   
+data.sort((a,b) => {
+  if (a.fields.embarked < b.fields.embarked) {
+    return -1
+  } else if (a.fields.embarked > b.fields.embarked) {
+    return 1
+  }
+  return 0
+})
+                                                       
+
 // Let's loop over each passenger and set some styles 
 passengers.forEach((p, i) => {
-  p.style.width = '15px'
-  p.style.height = '15px'
+  p.style.width = '20px'
+  p.style.height = '20px'
   p.style.borderRadius = data[i].fields.sex === 'female' ? '50%' : '0'
   p.style.opacity = data[i].fields.survived === 'No' ? '0.5' : '1'
-  const portColor = { S: 'tomato', C: 'cornflowerblue', Q: 'violet', undefined: 'yellow'}
   p.style.backgroundColor = portColor[data[i].fields.embarked]
 })
 

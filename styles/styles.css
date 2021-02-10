@@ -1,25 +1,25 @@
 html {
-    /* background-image: url(./assets/Titanic_sinking,_painting_by_Willy_Stöwer.jpg); */
-    background-color: #fcfcfc;
+    background-image: url(assets/Titanic_sinking.jpg);
+    background-color: white;
   }
  
-  /* .titanic-dataset { */
+.titanic-dataset { 
   
-    /* display: grid; */
-    /* gap:1px; */
-    /* -webkit-box-pack: center;
-        -ms-flex-pack: center; */
-            /* justify-content: center; */
-    /* -webkit-box-align: center;
-        -ms-flex-align: center; */
-            /* align-items: center; */
-    /* -webkit-box-orient: vertical;
+    display: grid; 
+    gap:1px; 
+    -webkit-box-pack: center;
+        -ms-flex-pack: center; 
+            justify-content: column; 
+            flex-direction: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center; 
+            align-items: center;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column; */
-            /* flex-direction: column; */
-  /* }  */
+        -ms-flex-direction: column; 
+  }  
   
-  /* .hero {
+  .hero {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -33,9 +33,9 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  } */
+  } 
   
-  /* .the-data {
+  .the-data {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -43,32 +43,32 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  } */
+  }
   
-  /* h1 {
+  h1 {
     color: #2b2b2b;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5px;
-  } */
+  }
   
-  /* h3 {
+  h3 {
     text-transform: uppercase;
-  } */
+  } 
   
-  /* p.text {
+  p.text {
     margin-bottom: 5px;
-  } */
+  } 
   
-  /* h1 .titanic {
-    color: #ab3e32;
+  h1 .titanic {
+    color: #0e0201;
     font-size: 1.5em;
     font-weight: 800;
   }
-   */
-  /* .heading {
+   
+  .heading {
     color: #ab3e32;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
@@ -78,56 +78,39 @@ html {
     margin-bottom: 10px;
     text-align: center;
   }
-   */
-  /* p.toggle-label {
+   
+  p.toggle-label {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     margin-right: 5px;
-  } */
-  /* .chart {
-    /* border: 1px black solid; */
-    /* width: 600px;
-    height: 700px;
-    padding: 2em;
-    position: relative;
-    left:30%;
-    top: -190px;
-  } */
-   
-  /* .toggle-buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 10px;
-  } */
-  
-  /* .toggle-div {
+  } 
+ 
+  .toggle-div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin-right: 20px;
-  } */
+  }
   
   /* The switch - the box around the slider */
-  /* .switch {
+  .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  } */
+  }
   
   /* Hide default HTML checkbox */
-  /* .switch input {
+  .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-   */
+   
   /* The slider */
-  /* .slider {
+  .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -137,8 +120,8 @@ html {
     background-color: #666562;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-  } */
-/*   
+  }
+  
   .slider:before {
     position: absolute;
     content: "";
@@ -163,16 +146,16 @@ html {
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     transform: translateX(26px);
-  } */
+  }
   
   /* Rounded sliders */
-  /* .slider.round {
+  .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
-  } */
+  }
   
   /* button {
     height: 30px;
