@@ -1,9 +1,25 @@
 html {
-    background-image: url(./assets/Titanic_sinking,_painting_by_Willy_Stöwer.jpg);
+    /* background-image: url(./assets/Titanic_sinking,_painting_by_Willy_Stöwer.jpg); */
     background-color: #fcfcfc;
   }
+ 
+  /* .titanic-dataset { */
   
-  .titanic-dataset {
+    /* display: grid; */
+    /* gap:1px; */
+    /* -webkit-box-pack: center;
+        -ms-flex-pack: center; */
+            /* justify-content: center; */
+    /* -webkit-box-align: center;
+        -ms-flex-align: center; */
+            /* align-items: center; */
+    /* -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column; */
+            /* flex-direction: column; */
+  /* }  */
+  
+  /* .hero {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17,25 +33,9 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
+  } */
   
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
-  .the-data {
+  /* .the-data {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -43,32 +43,32 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
+  } */
   
-  h1 {
+  /* h1 {
     color: #2b2b2b;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5px;
-  }
+  } */
   
-  h3 {
+  /* h3 {
     text-transform: uppercase;
-  }
+  } */
   
-  p.text {
+  /* p.text {
     margin-bottom: 5px;
-  }
+  } */
   
-  h1 .titanic {
+  /* h1 .titanic {
     color: #ab3e32;
     font-size: 1.5em;
     font-weight: 800;
   }
-  
-  .heading {
+   */
+  /* .heading {
     color: #ab3e32;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
@@ -78,75 +78,56 @@ html {
     margin-bottom: 10px;
     text-align: center;
   }
-  
-  p.toggle-label {
+   */
+  /* p.toggle-label {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     margin-right: 5px;
-  }
-  
-  .passenger-squares {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 45px;
-    margin-left: 45px;
-  }
-  
-  .square-styles {
-    color: white;
-    font-size: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 23px;
-    height: 23px;
-    background-color: #2b2b2b;
-    margin: 1px;
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
-  }
-  
-  .toggle-buttons {
+  } */
+  /* .chart {
+    /* border: 1px black solid; */
+    /* width: 600px;
+    height: 700px;
+    padding: 2em;
+    position: relative;
+    left:30%;
+    top: -190px;
+  } */
+   
+  /* .toggle-buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 10px;
-  }
+  } */
   
-  .toggle-div {
+  /* .toggle-div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin-right: 20px;
-  }
+  } */
   
   /* The switch - the box around the slider */
-  .switch {
+  /* .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
+  } */
   
   /* Hide default HTML checkbox */
-  .switch input {
+  /* .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+   */
   /* The slider */
-  .slider {
+  /* .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -156,8 +137,8 @@ html {
     background-color: #666562;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-  }
-  
+  } */
+/*   
   .slider:before {
     position: absolute;
     content: "";
@@ -182,18 +163,18 @@ html {
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     transform: translateX(26px);
-  }
+  } */
   
   /* Rounded sliders */
-  .slider.round {
+  /* .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
-  }
+  } */
   
-  button {
+  /* button {
     height: 30px;
     border-radius: 5px;
     margin-top: 15px;
@@ -206,8 +187,8 @@ html {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  
-  .titanic-buttons {
+   */
+  /* .titanic-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,8 +198,8 @@ html {
   }
   
 
-  
-  .titanic-image {
+   */
+  /* .titanic-image {
     width: 35vw;
     margin-top: 15px;
   }
@@ -226,12 +207,12 @@ html {
   .summary {
     font-family: "Montserrat", sans-serif;
   }
-  
-  h3 {
+   */
+  /* h3 {
     color: #e673ca;
   }
-  
-  @-webkit-keyframes boatAnimation {
+   */
+  /* @-webkit-keyframes boatAnimation {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
@@ -252,4 +233,4 @@ html {
               transform: translate3d(1000px, 0, 0);
     }
   }
-  /*# sourceMappingURL=styles.css.map */
+  # sourceMappingURL=styles.css.map */

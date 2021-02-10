@@ -10,13 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
 
 <body>
-  <div class='titanic-dataset'>
-
+  <div class='titanic-dataset' id='titanic'>
+{% comment %} 
     <!-- Title/ Hero -->
     <div class="hero">
       <h1> <span class="titanic">A Titanic Tragedy</span> <br> Data Visualizations</h1>
@@ -24,9 +24,14 @@
       <p class="heading"> Passenger Overview </p>
     </div>
 
-    <div class='the-data'>
 
-  
+    <div class='the-data'> {% endcomment %}
+
+  <div class="chart">
+      <div id="titanic">
+        <!-- generate all passenger divs -->
+      </div>
+{% comment %}       
     <!-- Toggle Buttons -->
     <div class='toggle-buttons'>
       <!-- Gender Toggle-->
@@ -78,24 +83,7 @@
     </div>
 
 
-
-    <!-- Passenger Overview -->
-    <div class="passenger-overview">
-
-      <!-- Render All Passengers -->
-      <div class="passenger-squares">
-        <div id='square-styles'></div>
-      </div>
-
-      <!-- Buttons -->
-      <div class="titanic-buttons">
-        <!-- <button id='showGenderButton'>Gender</button> -->
-        <!-- <button id='showCasualtiesButton'>Casualties</button> -->
-      </div>
-    </div>
-
-  </div>
-
+     
 
     <!-- Summary Of Passenger Data -->
     <div class='summary'>
@@ -145,8 +133,8 @@
 
   <!-- Show Passenger Info Overlay -->
   <div id='showOverlay'></div>
-  <script src='titanic.js'>
-  </script>
+  <script src='titanic.js' type='module'>
+  </script> {% endcomment %}
 
 </body>
 
