@@ -1,6 +1,23 @@
 import data from './titanic-data.js'
 
-const portColor = { S: 'tomato', C: 'cornflowerblue', Q: 'violet', undefined: 'black'}
+const titanic = document.querySelector('#titanic')
+
+titanic.style.display = 'grid'
+titanic.style.justifyContent = 'center'
+titanic.style.gridTemplateColumns = 'repeat(34, 15px)'
+titanic.style.gridGap = '2.5px'
+titanic.style.backgroundColor = 'white'
+
+const passengers = data.map(p => {
+  return document.createElement('div')
+})
+
+// Loop over each passenger and append them to the titanic
+passengers.forEach(p => {
+  titanic.appendChild(p)
+})
+
+const portColor = { S: 'tomato', C: 'blue', Q: 'purple', undefined: 'black'}
 const titanicEmbarked = document.querySelector('#titanic-embarked')
 
 const embarkedCounts = data.reduce((acc, p) => {
@@ -23,41 +40,21 @@ embarkedKeys.forEach((e) => {
 })
 
 titanicEmbarked.style.display = 'flex'
+titanicEmbarked.style.alignitems = 'flex-end'
 
-
-// Get a reference to the #titanic
-const titanic = document.querySelector('#titanic')
-
-titanic.style.display = 'grid'
-titanic.style.justifyContent = 'center'
-titanic.style.gridTemplateColumns = 'repeat(34, 15px)'
-titanic.style.gridGap = '2px'
-
-// Map over the data and make a new element for each passenger
-const passengers = data.map(p => {
-  return document.createElement('div')
+data.sort((a, b) => {
+  if (a.fields.sex === 'female') {
+    return -1
+  }
+  return -1
 })
-
-// Loop over each passenger and append them to the titanic
-passengers.forEach(p => {
-  titanic.appendChild(p)
-})
-
-// data.sort((a, b) => {
-//   if (a.fields.sex === 'female') {
-//     return -1
-//   }
-//   return -1
-// })
 
 // data.sort((a,b)=> {
 //   if (a.fields.survived === 'Yes') {
 //     return -1
 //   }
 //   return 1
-//   // return < 1 a <- b
-//   // return 0   a - b
-//   // return > 1 b <- a
+ 
 // })
    
 data.sort((a,b) => {

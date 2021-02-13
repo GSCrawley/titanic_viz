@@ -21,15 +21,17 @@
       <h1> <span class="titanic">A Tragedy of Titanic Proportions</span> </h1><br><h2> Data Visualizations</h2>
       <hr width="100px">
       <p class="heading"> Passenger Overview </p>
+</div>
 
-  <div class='titanic-dataset' id='titanic'>
-  <div class="chart">
+    <!-- Toggle Buttons -->
+    
+    <div class="chart">
+    <div class='titanic-dataset' id='titanic'>
+  
         <!-- generate all passenger divs -->
       </div>
       </div>
 
-    <!-- Toggle Buttons -->
-    <div class='toggle-buttons'>
       <!-- Gender Toggle-->
       <div class='toggle-div'>
         <p class='toggle-label'>Gender</p>
@@ -74,12 +76,9 @@
           <input id='showFareButton' type="checkbox">
           <span class="slider round"></span>
         </label>
-
       </div>
     </div>
 
-</div>
-     
 
     <!-- Summary Of Passenger Data -->
     <div class='summary'>
@@ -88,7 +87,6 @@
       <p>Total Number of Passengers: <span id='total-passengers'></span></p>
       <p>Total Number of Survivors: <span id='survivors'></span></p>
 
-      <div id="render-all-passengers"></div>
 
       <!-- Gender -->
       <h3>Gender</h3>
@@ -128,7 +126,6 @@
   </div>
 
   <!-- Show Passenger Info Overlay -->
-  <div id='showOverlay'></div>
   <script src='titanic.js' type='module'>
   </script> {% endcomment %}
 

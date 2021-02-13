@@ -4,13 +4,15 @@ html {
   }
  
 .titanic-dataset { 
-  
+    position: absolute;
     display: grid; 
     gap:1px; 
+
     -webkit-box-pack: center;
         -ms-flex-pack: center; 
             justify-content: column; 
             flex-direction: center; 
+            padding-left: 8rem;
     -webkit-box-align: center;
         -ms-flex-align: center; 
             align-items: center;
@@ -87,11 +89,12 @@ html {
   } 
  
   .toggle-div {
+    position:inherit;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-right: 20px;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 3rem;;
   }
   
   /* The switch - the box around the slider */
