@@ -1,8 +1,13 @@
 html {
-    background-image: url(assets/Titanic_sinking.jpg);
+    /* background-image: url(assets/Titanic_sinking.jpg); */
     background-color: white;
   }
- 
+/*  
+  body {
+    overflow-x: hidden;
+    cursor:pointer
+  } */
+
 .titanic-dataset { 
     position:absolute;
     display:flex; 
@@ -21,6 +26,7 @@ html {
   } 
    
   .the-data {
+    /* position: inherit; */
     display:flex;
     flex-direction:row;
     margin-top: 42rem;
@@ -70,15 +76,16 @@ html {
  
   .toggle-div {
     position:inherit;
+    display:inline-flex;
     flex-direction: row;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
     margin-top: 6rem;
   }
   
   /* The switch - the box around the slider */
   .switch {
     position: relative;
-    display: inline-block;
+    display:inline-block;
     width: 60px;
     height: 34px;
   }
@@ -127,7 +134,6 @@ html {
     background-color: purple;
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
@@ -136,35 +142,14 @@ html {
     border-radius: 50%;
   }
   
-   /* button {
-    height: 30px;
-    border-radius: 5px;
-    margin-top: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-  } */
-  
-  /* button:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  } */
-   
-  /* .titanic-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #passenger-embarkment {
+    margin-top: 4rem;
+    margin-left: 12rem;
   }
-  
-
-/*   
- .titanic-image {
-    width: 35vw;
-    margin-top: 15px;
-  } */
+ 
+  #titanic-embarked {
+    margin-top: 2rem;
+  }
   
   .summary {
     font-family: "Montserrat", sans-serif;
@@ -178,4 +163,3 @@ html {
   
  
   
-  # sourceMappingURL=styles.css.map */

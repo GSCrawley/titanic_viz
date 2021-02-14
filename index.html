@@ -24,7 +24,6 @@
 </div>
 
 
-    <!-- Toggle Buttons -->
     
     <div class="chart">
     <div class='titanic-dataset' id='titanic'>
@@ -32,39 +31,40 @@
         <!-- generate all passenger divs -->
       </div>
       </div>
-  
-<div class='the-data' id='buttons'>
 
+    <div class='the-data'>
+
+    <div class='toggle-buttons'>
       <!-- Gender Toggle-->
       <div class='toggle-div'>
-        <p class='sort-by-gender'>Gender</p>
+        <p class='toggle-label'>Gender</p>
         <label class="switch">
           <input id='sort-by-gender' type="checkbox">
-          <span class="slider round"></span>
+       <span class="slider round"></span>
         </label>
       </div>
 
       <!-- Children Toggle -->
       <div class='toggle-div'>
-        <p class='sort-by-children'>Children</p>
+        <p class='toggle-label'>Children</p>
         <label class="switch">
           <input id='sort-by-children' type="checkbox">
-          <span class="slider round"></span>
+        <span class="slider round"></span>
         </label>
       </div>
        
       <!-- Casualties Toggle -->
       <div class='toggle-div'>
-        <p class='sort-by-survival'>Casualties</p>
+        <p class='toggle-label'>Casualties</p>
         <label class="switch">
           <input id='sort-by-survival' type="checkbox">
-          <span class="slider round"></span>
+        <span class="slider round"></span> 
         </label>
       </div>
 
      <!-- Class Toggle -->
-     <div clas='toggle-div'>
-      <p class='sort-by-class'>Class</p>
+     <div class='toggle-div'>
+      <p class='toggle-label'>Class</p>
       <label class="switch">
         <input id='sort-by-class' type="checkbox">
         <span class="slider round"></span>
@@ -77,16 +77,18 @@
         <p class='toggle-label'>Fares</p>
         <label class="switch">
           <input id='sort-by-fare' type="checkbox">
-          <span class="slider round"></span>
+          <span class="slider round"></span> 
         </label>
       </div>
     </div>
-   
+</div>
+
     <div id="passenger-details">
         <!-- display passenger information/details here -->
       </div>
 
       <!-- Embarkment -->
+      <div id="passenger-embarkment">
       <h3>Embarkment</h3>
       <p style='color:orange'> Total: </p>
       <p style='color:tomato'> Embarked from Southampton:  </p>
@@ -95,8 +97,7 @@
       <span id='titanic-embarked'></span></p>
 
     </div>
-
-  </div>
+  
 
   <!-- Show ema Info Overlay -->
   <script src='titanic.js' type='module'>
