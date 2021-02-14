@@ -13,9 +13,11 @@ html {
     display:flex; 
     gap:1px; 
     justify-content:center; 
-    flex-direction: column; 
+    flex-direction:column; 
     padding-left: 12rem;
     align-items: center;
+    margin-left: 9rem;
+    margin-top: 2rem;
   }  
   
   .hero {
@@ -26,7 +28,7 @@ html {
   } 
    
   .the-data {
-    /* position: inherit; */
+    position: inherit;
     display:flex;
     flex-direction:row;
     margin-top: 42rem;
@@ -74,12 +76,17 @@ html {
     margin-right: 5px;
   } 
  
+  .toggle-buttons {
+    margin-top: 1rem;
+    margin-left: 8.5rem;
+  }
+
   .toggle-div {
     position:inherit;
     display:inline-flex;
     flex-direction: row;
     margin-left: 1.5rem;
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
   
   /* The switch - the box around the slider */
