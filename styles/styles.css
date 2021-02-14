@@ -45,6 +45,8 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top:40rem;
+    margin-left: 6rem;
   }
   
   h1 {
@@ -100,7 +102,7 @@ html {
   /* The switch - the box around the slider */
   .switch {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     width: 60px;
     height: 34px;
   }
@@ -139,6 +141,7 @@ html {
   
   input:checked + .slider {
     background-color: #deb443;
+    color: purple;
   }
   
   input:focus + .slider {
@@ -149,6 +152,7 @@ html {
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     transform: translateX(26px);
+    background-color: purple;
   }
   
   /* Rounded sliders */
@@ -160,20 +164,20 @@ html {
     border-radius: 50%;
   }
   
-  /* button {
+   /* button {
     height: 30px;
     border-radius: 5px;
     margin-top: 15px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-  }
+  } */
   
-  button:hover {
+  /* button:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-  }
-   */
+  } */
+   
   /* .titanic-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -184,20 +188,20 @@ html {
   }
   
 
-   */
-  /* .titanic-image {
+/*   
+ .titanic-image {
     width: 35vw;
     margin-top: 15px;
-  }
+  } */
   
   .summary {
     font-family: "Montserrat", sans-serif;
   }
-   */
-  /* h3 {
+   
+  h3 {
     color: #e673ca;
   }
-   */
+  
   /* @-webkit-keyframes boatAnimation {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
