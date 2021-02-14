@@ -7,44 +7,22 @@ html {
     position: absolute;
     display: grid; 
     gap:1px; 
-
-    -webkit-box-pack: center;
-        -ms-flex-pack: center; 
-            justify-content: column; 
-            flex-direction: center; 
-            padding-left: 8rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center; 
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column; 
+    justify-content: column; 
+    flex-direction: center; 
+    padding-left: 8rem;
+    align-items: center;
   }  
   
   .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
   } 
-  
+   
   .the-data {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-top:40rem;
     margin-left: 6rem;
   }
@@ -92,10 +70,7 @@ html {
  
   .toggle-div {
     position:inherit;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-left: 3rem;;
   }
   
@@ -123,7 +98,6 @@ html {
     right: 0;
     bottom: 0;
     background-color: #666562;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
   }
   
@@ -135,7 +109,6 @@ html {
     left: 4px;
     bottom: 4px;
     background-color: #3ed46b9f;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
   }
   
@@ -145,12 +118,10 @@ html {
   }
   
   input:focus + .slider {
-    -webkit-box-shadow: 0 0 1px #deb443;
-            box-shadow: 0 0 1px #deb443;
+      box-shadow: 0 0 1px #deb443;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
     transform: translateX(26px);
     background-color: purple;
   }
@@ -202,25 +173,8 @@ html {
     color: #e673ca;
   }
   
-  /* @-webkit-keyframes boatAnimation {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    100% {
-      -webkit-transform: translate3d(1000px, 0, 0);
-              transform: translate3d(1000px, 0, 0);
-    }
-  }
+
   
-  @keyframes boatAnimation {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    100% {
-      -webkit-transform: translate3d(1000px, 0, 0);
-              transform: translate3d(1000px, 0, 0);
-    }
-  }
+ 
+  
   # sourceMappingURL=styles.css.map */
