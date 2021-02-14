@@ -4,12 +4,12 @@ html {
   }
  
 .titanic-dataset { 
-    position: absolute;
-    display: grid; 
+    position:absolute;
+    display:flex; 
     gap:1px; 
-    justify-content: column; 
-    flex-direction: center; 
-    padding-left: 8rem;
+    justify-content:center; 
+    flex-direction: column; 
+    padding-left: 12rem;
     align-items: center;
   }  
   
@@ -21,10 +21,10 @@ html {
   } 
    
   .the-data {
-    display: flex;
-    flex-direction: row;
-    margin-top:40rem;
-    margin-left: 6rem;
+    display:flex;
+    flex-direction:row;
+    margin-top: 42rem;
+    margin-left: 8rem;
   }
   
   h1 {
@@ -70,14 +70,15 @@ html {
  
   .toggle-div {
     position:inherit;
-    flex-direction: column;
-    margin-left: 3rem;;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-top: 6rem;
   }
   
   /* The switch - the box around the slider */
   .switch {
     position: relative;
-    display: inline-flex;
+    display: inline-block;
     width: 60px;
     height: 34px;
   }

@@ -33,41 +33,40 @@
       </div>
       </div>
   
-  <div class='the-data'>
-
+<div class='the-data' id='buttons'>
 
       <!-- Gender Toggle-->
       <div class='toggle-div'>
-        <p class='toggle-label'>Gender</p>
+        <p class='sort-by-gender'>Gender</p>
         <label class="switch">
-          <input id='showGenderButton' type="checkbox">
+          <input id='sort-by-gender' type="checkbox">
           <span class="slider round"></span>
         </label>
       </div>
 
       <!-- Children Toggle -->
       <div class='toggle-div'>
-        <p class='toggle-label'>Children</p>
+        <p class='sort-by-children'>Children</p>
         <label class="switch">
-          <input id='showChildrenButton' type="checkbox">
+          <input id='sort-by-children' type="checkbox">
           <span class="slider round"></span>
         </label>
       </div>
-
+       
       <!-- Casualties Toggle -->
       <div class='toggle-div'>
-        <p class='toggle-label'>Casualties</p>
+        <p class='sort-by-survival'>Casualties</p>
         <label class="switch">
-          <input id='showCasualtiesButton' type="checkbox">
+          <input id='sort-by-survival' type="checkbox">
           <span class="slider round"></span>
         </label>
       </div>
 
      <!-- Class Toggle -->
      <div clas='toggle-div'>
-      <p class='toggle-label'>Class</p>
+      <p class='sort-by-class'>Class</p>
       <label class="switch">
-        <input id='showClassButton' type="checkbox">
+        <input id='sort-by-class' type="checkbox">
         <span class="slider round"></span>
       </label>
      </div>
@@ -77,49 +76,15 @@
       <div class='toggle-div'>
         <p class='toggle-label'>Fares</p>
         <label class="switch">
-          <input id='showFareButton' type="checkbox">
+          <input id='sort-by-fare' type="checkbox">
           <span class="slider round"></span>
         </label>
       </div>
     </div>
-
-
-    <!-- Summary Of Passenger Data -->
-    <div class='summary'>
-      <h1> Passenger Data <br> <span class="titanic">Summary</span></h1>
-      <hr width="100px">
-      <p>Total Number of Passengers: <span id='total-passengers'></span></p>
-      <p>Total Number of Survivors: <span id='survivors'></span></p>
-
-
-      <!-- Gender -->
-      */ <h3>Gender</h3>
-      <p>Total Male Passengers: <span id='malePassengers'></span> </p>
-      <p>Total Female Passengers: <span id='femalePassengers'></span></p> 
-
-      <!-- Age -->
-      <h3>Ages</h3>
-      <p class='text'>Youngest Passenger: <span id='youngest-passenger'></span></p class='text'>
-      <p class='text'>Oldest Passenger: <span id='oldest-passenger'></span> </p>
-      <p class='text'>Total Child Passengers (under 13): <span id='childPassengers'></span></p>
-      <p class='text'>Total Elderly Passengers (over 65):</p> 
-
-      <!-- Deaths -->
-      <h3>Deaths</h3>
-      <p>Total Deaths: <span id='deaths'></span></p>
-      <p>Female Deaths: <span id="femaleDeaths"></span></p>
-      <p>Male Deaths: <span id='maleDeaths'></span></p>
-      <p>Child Deaths: <span id='childDeaths'></span></p> 
-
-      <!-- Passenger Classes -->
-       <h3>Passenger Classes</h3>
-      <p>Total Passenger Classes:</p>
-      <p>Total passengers in Class One:</p>
-      <p>Deaths in Class One</p>
-      <p>Number of passengers in Class Two:</p>
-      <p>Deaths in Class Two</p>
-      <p>Number of passengers in Class Three:</p>
-      <p>Deaths in Class Three</p>
+   
+    <div id="passenger-details">
+        <!-- display passenger information/details here -->
+      </div>
 
       <!-- Embarkment -->
       <h3>Embarkment</h3>
@@ -133,7 +98,7 @@
 
   </div>
 
-  <!-- Show Passenger Info Overlay -->
+  <!-- Show ema Info Overlay -->
   <script src='titanic.js' type='module'>
   </script> 
 
