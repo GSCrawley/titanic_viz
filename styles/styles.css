@@ -1,6 +1,7 @@
 html {
     /* background-image: url(assets/Titanic_sinking.jpg); */
-    background-color: white;
+    background-color: #f1e3ee;
+    /* rgb(231, 224, 224); */
   }
 /*  
   body {
@@ -14,14 +15,14 @@ html {
     gap:1px; 
     justify-content:center; 
     flex-direction:column; 
-    padding-left: 12rem;
     align-items: center;
-    margin-left: 9rem;
+    margin-left: 25rem;
     margin-top: 2rem;
   }  
   
   .hero {
     display: flex;
+    position: inherit;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
@@ -77,7 +78,7 @@ html {
   } 
  
   .toggle-buttons {
-    margin-top: 1rem;
+    margin-top: -8rem;
     margin-left: 8.5rem;
   }
 
