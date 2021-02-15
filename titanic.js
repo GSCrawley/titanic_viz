@@ -2,11 +2,14 @@ import data from './titanic-data.js'
 
 const titanic = document.querySelector('#titanic')
 
+titanic.style.position = 'relative center'
 titanic.style.display = 'grid'
 titanic.style.justifyContent = 'center'
-titanic.style.gridTemplateColumns = 'repeat(34, 12px)'
-titanic.style.gridGap = '7px'
-titanic.style.backgroundColor = 'white'
+
+// note: dont change number of columns from 36
+titanic.style.gridTemplateColumns = 'repeat(38, 12px)'
+titanic.style.gridGap = '9px'
+titanic.style.backgroundColor = 'rgb(207, 201, 201)'
 
 const passengers = data.map(p => {
   return document.createElement('div')
@@ -161,6 +164,7 @@ document.body.addEventListener('click', (e) => {
     renderPassengerStyles()
 }
 })
+
 const titanicEmbarked = document.querySelector('#titanic-embarked')
 
 const embarkedCounts = data.reduce((acc, p) => {
@@ -220,10 +224,55 @@ data.sort((a,b) => {
 
 // Let's loop over each passenger and set some styles 
 passengers.forEach((p, i) => {
-  p.style.width = '20px'
-  p.style.height = '20px'
-  p.style.borderRadius = data[i].fields.sex === 'female' ? '50%' : '0'
-  p.style.opacity = data[i].fields.survived === 'No' ? '0.5' : '1'
-  p.style.backgroundColor = portColor[data[i].fields.embarked]
+  p.style.width = '15px'
+  p.style.height = '15px'
+
+const titanicSurvivors = document.querySelector('#titanic-survived')
+const survivorCount = data.reduce((acc, p) => {
+  if (acc[p.fields.survived] === undefined) {
+    acc[p.fields.survived] = 1
+  } else {
+    acc[p.fields.survived] += 1                                                                 ss    
+  }
+  return acc
+}, {})
+
+survivorCount.total = data.length
+
+const survivedKeys = Object.keys(survivorCount)
+
+survivedKeys.forEach((e) => {
+  const el = document.createElement('div')
+  titanicSurvivors.appendChild(el)
+  el.style.width = '30px'
+  const count = survivorCounts[e]
+  const percent = count / data.length * 100
+  el.style.height = `${percent}%`
+  el.style.backgroundColor = portColor[e] 
+  el.style.margin = '2px'
 })
 
+titanicSurvivors.style.display = 'flex'
+titanicSurvivors.style.alignItems = 'flex-end'
+titanicSurvivors.style.border = '1px solid'
+titanicSurvivors.style.width = '200px'
+titanicSurvivorsqa.style.height= '300px'
+
+data.sort((a, b) => {
+  if (a.fields.sex === 'male') {
+    return -1
+  }
+  return -1
+})
+
+
+   
+data.sort((a,b) => {
+  if (a.fields.embarked < b.fields.embarked) {
+    return -1
+  } else if (a.fields.embarked > b.fields.embarked) {
+    return 1
+  }
+  return 0
+})
+                            
