@@ -7,7 +7,7 @@ titanic.style.display = 'grid'
 titanic.style.justifyContent = 'center'
 
 // note: dont change number of columns from 36
-titanic.style.gridTemplateColumns = 'repeat(38, 12px)'
+titanic.style.gridTemplateColumns = 'repeat(36, 12px)'
 titanic.style.gridGap = '9px'
 titanic.style.backgroundColor = 'rgb(207, 201, 201)'
 
@@ -221,58 +221,58 @@ data.sort((a,b) => {
   return 0
 })
                                                        
-
 // Let's loop over each passenger and set some styles 
 passengers.forEach((p, i) => {
   p.style.width = '15px'
   p.style.height = '15px'
-
-const titanicSurvivors = document.querySelector('#titanic-survived')
-const survivorCount = data.reduce((acc, p) => {
-  if (acc[p.fields.survived] === undefined) {
-    acc[p.fields.survived] = 1
-  } else {
-    acc[p.fields.survived] += 1                                                                 ss    
-  }
-  return acc
-}, {})
-
-survivorCount.total = data.length
-
-const survivedKeys = Object.keys(survivorCount)
-
-survivedKeys.forEach((e) => {
-  const el = document.createElement('div')
-  titanicSurvivors.appendChild(el)
-  el.style.width = '30px'
-  const count = survivorCounts[e]
-  const percent = count / data.length * 100
-  el.style.height = `${percent}%`
-  el.style.backgroundColor = portColor[e] 
-  el.style.margin = '2px'
 })
 
-titanicSurvivors.style.display = 'flex'
-titanicSurvivors.style.alignItems = 'flex-end'
-titanicSurvivors.style.border = '1px solid'
-titanicSurvivors.style.width = '200px'
-titanicSurvivorsqa.style.height= '300px'
+// const titanicSurvivors = document.querySelector('#titanic-survived')
+// const survivorCount = data.reduce((acc, p) => {
+//   if (acc[p.fields.survived] === undefined) {
+//     acc[p.fields.survived] = 1
+//   } else {
+//     acc[p.fields.survived] += 1                                                                 ss    
+//   }
+//   return acc
+// }, {})
 
-data.sort((a, b) => {
-  if (a.fields.sex === 'male') {
-    return -1
-  }
-  return -1
-})
+// survivorCount.total = data.length
+
+// const survivedKeys = Object.keys(survivorCount)
+
+// survivedKeys.forEach((e) => {
+//   const el = document.createElement('div')
+//   titanicSurvivors.appendChild(el)
+//   el.style.width = '30px'
+//   const count = survivorCounts[e]
+//   const percent = count / data.length * 100
+//   el.style.height = `${percent}%`
+//   el.style.backgroundColor = portColor[e] 
+//   el.style.margin = '2px'
+// })
+
+// titanicSurvivors.style.display = 'flex'
+// titanicSurvivors.style.alignItems = 'flex-end'
+// titanicSurvivors.style.border = '1px solid'
+// titanicSurvivors.style.width = '200px'
+// titanicSurvivorsqa.style.height= '300px'
+
+// data.sort((a, b) => {
+//   if (a.fields.sex === 'male') {
+//     return -1
+//   }
+//   return -1
+// })
 
 
    
-data.sort((a,b) => {
-  if (a.fields.embarked < b.fields.embarked) {
-    return -1
-  } else if (a.fields.embarked > b.fields.embarked) {
-    return 1
-  }
-  return 0
-})
+// data.sort((a,b) => {
+//   if (a.fields.embarked < b.fields.embarked) {
+//     return -1
+//   } else if (a.fields.embarked > b.fields.embarked) {
+//     return 1
+//   }
+//   return 0
+// })
                             
