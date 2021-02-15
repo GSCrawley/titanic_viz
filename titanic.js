@@ -4,7 +4,7 @@ const titanic = document.querySelector('#titanic')
 
 titanic.style.display = 'grid'
 titanic.style.justifyContent = 'center'
-titanic.style.gridTemplateColumns = 'repeat(34, 15px)'
+titanic.style.gridTemplateColumns = 'repeat(34, 12px)'
 titanic.style.gridGap = '7px'
 titanic.style.backgroundColor = 'white'
 
@@ -87,7 +87,7 @@ const portColor = {
 }
 
 
-function renderPassengers() {
+function renderPassengerStyles() {
   passengers.forEach((p, i) => {
   p.classList.add('passenger')
   p.dataset.id = i
@@ -102,7 +102,7 @@ function renderPassengers() {
   p.style.backgroundColor = portColor[data[i].fields.embarked]
 })
 }
-renderPassengers()
+renderPassengerStyles()
 
 const passengerDetails = document.querySelector('#passenger-details')
 document.body.addEventListener('mouseover', (e) => {
