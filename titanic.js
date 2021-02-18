@@ -95,8 +95,8 @@ function renderPassengerStyles() {
   p.classList.add('passenger')
   p.dataset.id = i
   
-  p.style.width = '15px'
-  p.style.height = '15px'
+  p.style.width = data[i].fields.age > '13' ? '15px' : '10px'
+  p.style.height = data[i].fields.age > '13' ? '15px' : '10px'
   
   p.style.borderRadius = data[i].fields.sex === 'female' ? '50%' : '0'
  
